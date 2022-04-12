@@ -21,7 +21,7 @@ public class ProductoController {
         this.mapper = mapper;
     }
 
-    @PostMapping("/cliente")
+    @PostMapping("/producto")
     @ResponseStatus(HttpStatus.CREATED)
     public Mono<Producto> save(@RequestBody ProductoDto productoDto){
         Producto producto = mapper.map(productoDto, Producto.class);
